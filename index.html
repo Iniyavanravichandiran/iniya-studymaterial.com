@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKP Engineering College – Tiruvannamalai</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            padding-bottom: 120px;
+        }
+
+        .welcome-box {
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .welcome-box h1 {
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .welcome-box p {
+            font-size: 15px;
+            opacity: 0.9;
+        }
+
+        section {
+            background: #fff;
+            padding: 40px 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            width: 320px;
+            text-align: center;
+        }
+
+        section h2 {
+            margin-bottom: 25px;
+            font-size: 28px;
+            color: #2d3436;
+            text-transform: uppercase;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            color: #636e72;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1.5px solid #b2bec3;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0984e3;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #74b9ff;
+        }
+
+        /* Improved visible contact mail */
+        .mail-box {
+            position: fixed;
+            right: 20px;
+            bottom: 180px;
+            background: rgba(0, 0, 0, 0.55);
+            padding: 14px 20px;
+            border-radius: 12px;
+            color: #fff;
+            font-size: 15px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: glow 3s infinite ease-in-out;
+        }
+
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+            }
+
+            100% {
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            }
+        }
+
+        footer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 25px 20px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            border-top: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer-container {
+            max-width: 600px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.12);
+            padding: 20px 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .footer-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .footer-text {
+            font-size: 0.9rem;
+            color: #eeeeee;
+        }
+
+        .footer-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #dcd6ff;
+        }
+
+        .footer-copy {
+            font-size: 0.8rem;
+            color: #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="welcome-box">
+        <h1>Welcome to Study Hub 📚</h1>
+        <p>Your department resources, lab manuals & notes — all in one place.</p>
+    </div>
+
+    <section>
+        <h2>Welcome</h2>
+
+        <!-- <label>Username</label>
+        <input id="username" type="text" placeholder="Enter Username" required>
+
+        <label>Password</label>
+        <input id="password" type="password" placeholder="Enter Password" required> -->
+
+        <a href="/home.html"><button>Login</button></a>
+    </section>
+
+    <div class="mail-box">
+        <strong>Contact:</strong><br>
+        iniyavanravichandiran@gmail.com
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p class="footer-title">Created for Juniors</p>
+            <p class="footer-text">This website was built to support learning and make studies easier for future
+                batches.</p>
+            <p class="footer-name"><strong>Iniyavan R</strong> — IT Department, Alumni</p>
+            <p class="footer-copy">© 2025 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- LOGIN VALIDATION SCRIPT -->
+    <!-- <script>
+        function validateLogin() {
+            let user = document.getElementById("username").value;
+            let pass = document.getElementById("password").value;
+
+            if (user === "SKPEC" && pass === "5122") {
+                window.location.href = "home.html";
+            } else {
+                alert("Invalid Username or Password ❌");
+            }
+        }
+    </script> -->
+
+</body>
+
+</html>
